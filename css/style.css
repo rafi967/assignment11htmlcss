@@ -1,0 +1,143 @@
+:root {
+    --primaryBg: #40536d;
+    --secondbg: #ddd;
+    --primaryColor: #ffffff;
+    --regularFontSize: 14px;
+    --black:#000;
+    --darkblue:darkblue;
+    --meroon:#cce5ff;
+    --white-smiller:#f2f2f2;
+  }
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+    outline: 0;
+  }
+a,a:hover{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+  line-height: 0.8;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: var(--baseFontSize);
+  background-color: var(--primaryColor);
+} 
+
+.container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 30px;
+  text-transform: uppercase;
+  color:var(--black);
+}
+.first-section {
+  margin-top: 20px;
+  padding: 10px;
+}
+.first-section p{
+  font-size: var(--regularFontSize);
+  line-height: 18px;
+  text-align: justify;
+}
+.first-section ul{
+  margin-top: 20px;
+}
+.first-section ul li {
+  background: var(--meroon);
+  color: var(--darkblue);
+  margin: 5px;
+}
+.img-div{
+  padding: 20px;
+}
+.img-div img{
+  padding: 15px;
+}
+
+.table-section{
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.table-section, .table-section th {
+  border: 1px solid var(--secondbg);
+  padding: 8px;
+}
+.table-section tr:nth-child(even){background-color: var(--white-smiller);}
+.table-section tr:hover {background-color: var(--secondbg);}
+.table-section th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--meroon);
+  color: var(--black);
+}
+/* 
+flag part start */
+.japan-flag {
+  margin: auto;
+  width: 600px;
+  height: 320px;
+  background-color: var(--primaryColor);
+  position: relative;
+  border: 1px solid var(--black);
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* flag part end */
+iframe{
+  padding: 20px 10px 20px 30px;
+}
+/* copyright  part start */
+.copyrights{
+  font-weight: 700;
+  font-size: 16px;
+  color: #282828;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+.copyrights h4::before{
+  width: 82px;
+  height: 2px;
+  background:var(--darkblue);
+  left: 38%;
+  bottom: 4px;
+  position: absolute;
+  content: '';
+}
+.copyrights h4::after{
+  width: 82px;
+  height: 2px;
+  background: var(--darkblue);
+  left: 56%;
+  bottom: 4px;
+  position: absolute;
+  content: '';
+}
+/* copyright  part end */
